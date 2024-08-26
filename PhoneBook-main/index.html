@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,20 +22,21 @@
 
     <div class="headerwrap hftext">
         <ul>
-            
+
             <li>
                 <a href="./index.html" id="phonebook-link">
                     <img src="assets/phonebook.png" id="PhoneBook-Icon" class="header-icon" alt="PhoneBook Icon"></a>
-                      PhoneBook
-               
+                PhoneBook
+
             </li>
-            
+
         </ul>
     </div>
 
 </header>
 
 <!-- Body -->
+
 <body>
     <!-- Main -->
     <main>
@@ -52,39 +54,39 @@
 
             <!-- Clear Contacts -->
             <button class="btn" style="background-color: red;" id="deleteBtn" onclick="deleteValues()">
-                 <img src="assets/contact.png" alt="Add Contact Icon" class="button-icon">Clear Contacts
-                </button>
+                <img src="assets/contact.png" alt="Add Contact Icon" class="button-icon">Clear Contacts
+            </button>
 
             <!-- Dark Mode -->
             <button class="btn" id="darkModeToggle" onclick="toggleDarkMode()">
                 <img src="assets/sleep-mode.png" alt="Dark Mode Icon" class="button-icon"> Dark Mode
             </button>
-    
-        <!-- Contacts List -->
-        <div class="contact-table">
-             <div class="contact-header">
-             <div class="contact-name-header">Name</div>
-            <div class="contact-number-header">Phone Number</div>
-        <div class="contact-actions-header">Actions</div>
-    </div>
-    <ul id="contactList" class="contact-list">
-        <!-- Contacts will be rendered here -->
-    </ul>
-    </div>
 
-        <!-- No Contacts Message -->
-        <div id="noContactsMessage" class="no-contacts-message" style="display: none;">
-            No Contacts Available
-        </div>
+            <!-- Contacts List -->
+            <div class="contact-table">
+                <div class="contact-header">
+                    <div class="contact-name-header">Name</div>
+                    <div class="contact-number-header">Phone Number</div>
+                    <div class="contact-actions-header">Actions</div>
+                </div>
+                <ul id="contactList" class="contact-list">
+                    <!-- Contacts will be rendered here -->
+                </ul>
+            </div>
+
+            <!-- No Contacts Message -->
+            <div id="noContactsMessage" class="no-contacts-message" style="display: none;">
+                No Contacts Available
+            </div>
 
 
     </main>
 
-  
+
 
     <!-- Add/Update Contact Model -->
     <div class="model" id="myModel" onclick="closeModel(event)">
-        <div class="content"> 
+        <div class="content">
             <button class="close-btn" id="closeModelBtn" onclick="closeModel(event)">X</button>
             <h2>ADD A CONTACT</h2>
             <form action="" method="get">
@@ -103,22 +105,24 @@
                 <label for="userDescription">Description: </label>
                 <input type="text" id="userDescription">
                 <br><br>
-                <input id="submitBtn" class="btn" style="background-color: green;" type="button" value="Submit" onclick="saveContact()">
-                <input id="updateBtn" class="btn" style="background-color: green; display: none;" type="button" value="Update" onclick="updateContact()">
+                <input id="submitBtn" class="btn" style="background-color: green;" type="button" value="Submit"
+                    onclick="saveContact()">
+                <input id="updateBtn" class="btn" style="background-color: green; display: none;" type="button"
+                    value="Update" onclick="updateContact()">
             </form>
         </div>
     </div>
 
 
     <!-- Close pop-up window button -->
-    <div class="model" id="info" >
+    <div class="model" id="info">
         <div class="info">
             <button class="close-btn" id="closeInfoBtn" onclick="closeInfo(event)">X</button>
-        </div> 
+        </div>
     </div>
 
-<!-- Calling the JS file -->
-    <script src="index.js"></script> 
+    <!-- Calling the JS file -->
+    <script src="index.js"></script>
 </body>
 
 <!-- Footer -->
@@ -133,5 +137,5 @@
         </li>
     </ul>
 </footer>
-</html>
 
+</html>
